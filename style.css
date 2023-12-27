@@ -1,0 +1,130 @@
+/* Add your CSS styling here */
+
+body {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    background-image: url();
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #001f3f;
+}
+
+main {
+    background-color: #111111;
+}
+
+footer {
+    background-color: #001f3f;
+}
+
+#sidebar {
+    background-color: #001f3f;
+    padding: 20px;
+}
+
+.zoom {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+#card{
+    cursor: pointer;
+}
+#head{
+    font-weight: bold;
+    margin-top: -15px;
+    padding-bottom: -20px;
+    font-weight: bolder;
+    text-align: center;
+    background-image: url(http://www.spacehub.com/img/news-item-2.jpg)
+    
+  }
+
+  #nav_1{
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(rgb(109, 161, 244),rgb(233, 247, 77));/* Set your desired background color */
+    border-color: black;
+}
+#foot{
+    background-image: url(https://media.cnn.com/api/v1/images/stellar/prod/220519191436-36-week-in-photos-0519.jpg?c=original);
+    margin-bottom: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#box21{
+    float: left;
+  }
+  #box22{
+    float: right;
+
+  }
+    #vm{
+        width: 60%;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius: 15px;
+        background-image: url(https://www.stockvault.net/data/2012/07/08/132471/preview16.jpg);
+    }
+    /* Add styles for the sidebar */
+    aside {
+        background-color: rgb(253, 253, 188); /* Dark background */
+        padding: 20px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+        
+
+    }
+
+    .sidebar-content {
+        margin-bottom: 20px;
+    }
+
+    .sidebar-content h3 {
+        color: rgb(219, 52, 99); /* Blue color for headings */
+        border-radius: 10px;
+        border-color: black;
+    }
+
+    .sidebar-content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar-content li {
+        margin-bottom: 5px;
+    }
+
+    .sidebar-content a {
+        color:blue/* White color for links */
+        
+    }
+
+    .sidebar-content a:hover {
+        text-decoration: underline;
+    }
+
+    #countdown {
+        color: #e74c3c; /* Red color for countdown */
+        font-weight: bold;
+    }
+
+    
+
+/* Add more styling for planets, astronaut stories, space missions, and other elements as needed */
+

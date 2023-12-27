@@ -1,0 +1,290 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBISTAAN Space Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhuZSXU9q6o4z54qtEJKABWd5CaCLmpp6tWgfVqWtuFZMFFTsYsy2KszyxVY11TdMsAs&usqp=CAU">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--JS Script for countdown-->
+    <script>
+      // Set the launch date and time (in UTC)
+      const launchDate = new Date('December 31, 2023 00:00:00 UTC').getTime();
+  
+      // Update the countdown every second
+      const countdown = setInterval(function() {
+          const now = new Date().getTime();
+          const distance = launchDate - now;
+  
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+          document.getElementById('countdown').innerText = `${hours}:${minutes}:${seconds}`;
+  
+          // If the countdown is over, display a message
+          if (distance < 0) {
+              clearInterval(countdown);
+              document.getElementById('countdown').innerText = 'Lift-off!';
+          }
+      }, 1000);
+  </script>
+  
+  </head>
+  <body>
+    <header id=head>
+        <div class="header-content">
+            <div class="logo">
+                <div class="symbol" align=left ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUhuZSXU9q6o4z54qtEJKABWd5CaCLmpp6tWgfVqWtuFZMFFTsYsy2KszyxVY11TdMsAs&usqp=CAU" width="70px" height="60px">
+                   <b> National Aeronautics and Space Administration(NASA)</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                   <a align=left href="../webistan/Signup.html" class="btn btn-primary">Newsletter-signup</a>
+                </div>
+            </div>
+    </header>
+    <!-- Navigation Bar -->      
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id=nav_1>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../webistan/SpaceExporationHubNASA.html">Home&emsp;</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../webistan/SpaceExporationHubNASA.html">About Us&emsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../webistan/SpaceExporationHubNASA.html">R&D&emsp;</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="../webistan/SpaceExporationHubNASA.html">Register&emsp;</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sign in/up&emsp;
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../webistan/SpaceExporationHubNASA.html">Sign IN</a></li>
+                      <li><a class="dropdown-item" href="../webistan/Signup.html">Sign up</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../webistan/SpaceExporationHubNASA.html">Carrier &emsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../webistan/SpaceExporationHubNASA.html">Education & Training&emsp;</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../webistan/SpaceExporationHubNASA.html">Contact-us&emsp;</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    </header>
+
+    <!--sidebar-->
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <img height="30px" width="30px" src="data:image/png;base64,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">Menu
+      </a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">space exploration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary " type="button" href="#">
+                Astronomical events
+            </button><br><hr>
+            <button class="btn btn-secondary " type="button" href="#">
+                Chandrayaan-2
+            </button><br><hr>
+            <button class="btn btn-secondary " type="button" href="#">
+                Space Agencies
+            </button><br><hr>
+            <button class="btn btn-secondary " type="button" href="#">
+                Research & Devlp.
+            </button><br><hr>
+            <button class="btn btn-secondary " type="button" href="#">
+                More Useful Links
+            </button><br><hr>
+            
+          </div>
+        </div>
+      </div>
+
+<!-- Inside the <aside> tag in the main section -->
+  <div class="row">
+    <div class="col-lg-4">
+      <aside>
+        <!-- Add space-related information, upcoming events, countdown, or links here -->
+        <div class="sidebar-content">
+          <marquee class="marq" bgcolor = "yellow" direction = "left" ><h3>&succcurlyeq;Upcoming Events&succcurlyeq;</h3></marquee>
+            <ul>
+                <li>2023 December 24 - Peregrine Mission 1 (TO 2-AB) - Launch of NASA CLPS lunar lander</li>
+            </ul>
+        </div>
+    
+        <div class="sidebar-content">
+          <marquee class="marq" bgcolor = "skyblue" direction = "right" ><h3>&succcurlyeq;Next Rocket Launch&succcurlyeq;</h3></marquee>
+            <p>Countdown: <span id="countdown">23:56:10</span></p>
+        </div>
+    
+        <div class="sidebar-content">
+          <marquee class="marq" bgcolor = "yellow" direction = "left" ><h3>&succcurlyeq;Space Agencies&succcurlyeq;</h3></marquee>
+            <ul>
+                <li><a href="https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-nasa-grades-k-4/">&succcurlyeq;National Aeronautics and Space Administration(NASA) </a></li>
+                <li><a href="https://www.esa.int/"> &succcurlyeq;ESA Space Agencies(ESA)</a></li>
+                <li><a href="https://www.isro.gov.in/">&succcurlyeq;Indian Space Research Organisation(ISRO)</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    </div>
+
+    <div class="col-lg-8">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img href="../webistan/SpaceExporationHubNASA.html" width="500px" height="400px" src="https://img.freepik.com/premium-photo/international-space-station-floats-gracefully-orbit-around-earth-serving-as-hub-scientific-space-exploration-generative-ai_653286-881.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img href="../webistan/SpaceExporationHubNASA.html" width="500px" height="400px" src="https://science.nasa.gov/_ipx/w_1536&f_webp/https://smd-cms.nasa.gov/wp-content/uploads/2023/11/svs-pace-beauty2.jpg%3Fw=640" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img href="../webistan/SpaceExporationHubNASA.html" width="500px" height="400px" src="https://media.bnn.network/content/uploads/2023/10/space-research-and-technology-in-jena-20231013210856.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    </div>
+  </div>
+
+         <!--Slider--> 
+    
+    
+    <div>
+        <div class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="alert alert-primary">
+                        <h2>Planets</h2> 
+                    </div>
+                    <p>A planet is a large, rounded astronomical body that is neither a star nor its remnant. The best available theory of planet formation is the nebular hypothesis, which posits that an interstellar cloud collapses out of a nebula to create a young protostar orbited by a protoplanetary disk.</p>
+                    <button type="button" class="btn btn-primary">Know more</button>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-primary">
+                        <h2>Astronaut Stories</h2> 
+                    </div>
+                    <p>Arguably the most famous astronaut of all time, Neil Armstrong became the first man to walk on the moon in 1969. During this incredible Apollo 11 mission, he said these iconic words: “That's one small step for man, one giant leap for mankind.”</p>
+                    <button type="button" class="btn btn-primary">Know more</button>
+                </div>
+                <div class="col-lg-4">
+                    <div class="alert alert-primary">
+                        <h2>Space Missions</h2> 
+                    </div>
+                    <p>
+                        1961: Vostok I - First Man in Space.... <br>
+                        1963: Vostok 6 - First Woman in Space. ...  <br>
+                        1969: Apollo 11 - First Man on the Moon. ...  <br>
+                        1970: Venera 7 - First Landing on Another Planet. ...
+                    <button type="button" class="btn btn-primary">Know more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-lg-4" id=card>
+                <div class="card" style="width: 18rem;">
+                <img src="https://aryabot.in/wp-content/uploads/2023/09/Chandrayan-3-1024x576.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chandrayan-3</h5>
+                  <p class="card-text">Chandrayaan-3 is a follow-on mission to Chandrayaan-2 to demonstrate end-to-end capability in safe landing and roving on the lunar surface.</p>
+                  <a href="#" class="btn btn-primary">know more...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" id=card>
+                <div class="card" style="width: 18rem;">
+                <img src="https://d10lvax23vl53t.cloudfront.net/images/Article_Images/ImageForArticle_1473(1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aircraft</h5>
+                  <p class="card-text">An aircraft (pl.: aircraft) is a vehicle that is able to fly by gaining support from the air. It counters the force of gravity by using either static lift .</p>
+                  <a href="#" class="btn btn-primary">know more...</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" id=card>
+                <div class="card" style="width: 18rem;">
+                <img src="https://imgix.bustle.com/uploads/shutterstock/2020/4/6/7a3eef2c-6ee8-464c-9bf6-acd251085e52-shutterstock-1029243295.jpg?w=800&fit=crop&crop=faces&auto=format%2Ccompress" class="card-img-top" alt="...">
+                <div  class="card-body">
+                  <h5 class="card-title">Planets</h5>
+                  <p class="card-text">A planet is a large, rounded astronomical body that is neither a star nor its remnant. </p>
+                  <a href="#" class="btn btn-primary">know more...</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id=vm class="container">
+        <div class="row">
+            <div class="col-lg-6">
+              <div id=box21>
+                <h5><b><u>Vision</u></b></h5><hr>
+                  <p>NASA's Vision: We reach for new heights and reveal the unknown for the benefit of humankind. NASA's Mission: Drive advances in science, technology, aeronautics, and space exploration to enhance knowledge, education, innovation, economic vitality, and stewardship of Earth.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div id=box22>
+                <h5><b><u>Mission</u></b></h5><hr>
+                <p>NASA will land the first woman and first person of color on the Moon, using innovative technologies to explore more of the lunar surface than ever before. We will collaborate with commercial and international partners and establish the first long-term presence on the Moon.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+<hr>
+    <footer class="text-center" id=foot>
+        <div class="footer-content">
+            <div class="social-media" id="social">
+                <img width="25px" height="25px" src="../images/insta.jpeg" alt="Social Media 1">&emsp;
+                <img width="25px" height="25px" src="../images/twitter.png" alt="Social Media 2">&emsp;
+                <img width="25px" height="25px" src="../images/facebook.png" alt="Social Media 3">&emsp;
+                <img width="25px" height="25px" src="../images/whatsapp.jpeg" alt="Social Media 4">&emsp;
+            </div>
+        </div>
+        <p>&copy; 2023 WEBISTAAN Space Hub, All rights reserved, | Follow us on <a href="#">Twitter</a> and <a href="#">Instagram</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
